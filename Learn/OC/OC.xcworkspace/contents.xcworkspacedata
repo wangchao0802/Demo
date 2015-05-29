@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TestArc/testAlipay/testAlipay.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestArc/TestArc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestRetina/TestRetina.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestPopOver/TestPopOver.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestException/TestException.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestTableView/TestTableView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestDecorate/TestDecorate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestIos7/TestIos7.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestLabel/TestLabel.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestFMDB/TestFMDB.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:testLib/testLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NewBlockTest/NewBlockTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoLayoutTest/AutoLayoutTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:fuckVC/fuckVC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:loveConstraints/loveConstraints.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StructsProblem/StructsProblem.xcodeproj">
+   </FileRef>
+</Workspace>

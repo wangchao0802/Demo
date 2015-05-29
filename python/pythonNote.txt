@@ -1,0 +1,90 @@
+
+#========执行方式============#
+脚本有2种执行方式：
+1.交互式： python 即进入；
+2.脚本式： python hello.py 或者   ./test.py
+
+#========变量============#
+s[1:5] 包含1的字符，不包含5的位置的字符；
+s[1:3]*2 重复2次
+元组只读列表； （2，3）
+
+#========计算============#
+**  a**b 为 a的b 次方
+//  a//b 为 返回整除的部分
+*   a*b 两个数相乘或者返回一个被重复若干次的整数；
+
+#========循环============#
+
+for...else ；else 中会在循环正常执行（非break）完的是情况下执行；
+python pass 空语句，是为了保持程序结构的完整性
+
+#========字符串拼接============#
+用+拼接；
+print "%d %s" %(d ,f) 格式化输出
+三引号：‘’‘ ’‘’ 中可以打印特殊字符；
+
+元组和数组之间的区别在于元组不可修改；
+
+#========字符串拼接============#
+#!coding=utf-8  等号两边不能留空白
+#!/usr/bin/python
+
+#======不定参数函数声明=========#
+def printinfo(arg,*args):
+	"input a "
+	print arg
+	for a in args:
+		print a
+	return;
+
+printinfo("hello","new","baby")
+
+#======模块=========#
+模块就是相当于一个单独的文件； 
+import module1
+调用时：
+module1.***()
+
+导入部分功能
+from module1 import function1
+调用时：
+function1()
+
+导入所有
+from module1 import *
+
+money  = 200
+
+访问全局变量用global 声明；
+def addMoney():
+	global money
+	money = money+1
+	pass
+
+print money
+addMoney()
+print money
+
+#======包=========#
+包是一个分层次的文件目录结构，定义了一个模块及子包
+
+文件夹下，创建一个__init__.py
+使用显示导入函数：
+from bao1 import function1
+from bao2 import function2
+
+#======类=========#
+class A(B):
+
+私有变量：
+ __private**;
+私有方法：
+__privatemeh()
+类内部定义方法必须包含参数self,且为第一个参数
+
+
+
+
+
+

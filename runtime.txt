@@ -1,0 +1,171 @@
+=================================
+oc语言相关的都是Objc_开头
+objc_getMetaClass(class_getName(cls))...
+
+=================================
+对象相关的object_开发
+object_setClass...
+
+=================================
+类相关的操作都是class_开头的
+class_getName（）...
+成员变量，属性，成员函数，都是类相关的都可以用class_get***获得对应的指针；
+也可以从 class_copy***list 获取所有的对应的对象；
+
+=================================
+成员变量相关的都是ivar_开头的
+ivar_getName(ivar)...
+
+=================================
+属性相关的都是property_ 开头
+property_getName(array）...
+
+=================================
+方法相关的都是method_开头
+method_getName(method)...
+IMP 是一个方法的实现体，
+可以调用 imp()来执行该方法；
+
+=================================
+协议相关的都是protocol_开头：
+protocol_getName()...
+获取协议的方法：
+Protocol *__unsafe_unretained  *protocols = class_copyProtocolList
+或者 tocol = objc_getProtocol("NSCopying");
+
+=================================
+关联对象，被关联的当前对象被释放时会自动释放其的关联对象；
+关联对象是在运行时添加的类似成员；
+************源代码如下********************************/
+void *objc_destructInstance(id obj) 
+{
+    if (obj) {
+        // Read all of the flags at once for performance.
+        bool cxx = obj->hasCxxDtor();
+        bool assoc = !UseGC && obj->hasAssociatedObjects();
+        bool dealloc = !UseGC;
+
+        // This order is important.
+        if (cxx) object_cxxDestruct(obj);
+        if (assoc) _object_remove_assocations(obj);
+        if (dealloc) obj->clearDeallocating();
+    }
+
+    return obj;
+}
+
+=================================
+调用一个IMP 
+
+使用NSObject提供的methodForSelector:方法可以获得Method的指针，
+通过指针调用实现代码。
+-(void)setFilled:(Bool)
+
+void (*setter)(id, SEL, BOOL);
+int i;
+setter = (void (*)(id, SEL, BOOL))[target
+     methodForSelector:@selector(setFilled:)];
+for ( i = 0 ; i < 1000 ; i++ )
+     setter(targetList[i], @selector(setFilled:), YES);
+
+=================================
+使用method swizzling需要注意的问题
+
+Swizzling应该总在+load中执行：Objective-C在运行时会自动调用类的两个方法+load和+initialize。+load会在类初始加载时调用，和+initialize比较+load能保证在类的初始化过程中被加载
+Swizzling应该总是在dispatch_once中执行：swizzling会改变全局状态，所以在运行时采取一些预防措施，使用dispatch_once就能够确保代码不管有多少线程都只被执行一次。这将成为method swizzling的最佳实践。
+Selector，Method和Implementation：这几个之间关系可以这样理解，一个类维护一个运行时可接收的消息分发表，分发表中每个入口是一个Method，其中key是一个特定的名称，及SEL，与其对应的实现是IMP即指向底层C函数的指针。
+
+=================================
+
+类与对象操作函数
+
+runtime有很多的函数可以操作类和对象。类相关的是class为前缀，对象相关操作是objc或object_为前缀。
+
+类相关操作函数
+
+name
+
+// 获取类的类名
+const char * class_getName ( Class cls );
+super_class和meta-class
+
+// 获取类的父类
+Class class_getSuperclass ( Class cls );
+
+// 判断给定的Class是否是一个meta class
+BOOL class_isMetaClass ( Class cls );
+instance_size
+
+// 获取实例大小
+size_t class_getInstanceSize ( Class cls );
+成员变量(ivars)及属性
+
+//成员变量操作函数
+// 获取类中指定名称实例成员变量的信息
+Ivar class_getInstanceVariable ( Class cls, const char *name );
+
+// 获取类成员变量的信息
+Ivar class_getClassVariable ( Class cls, const char *name );
+
+// 添加成员变量
+BOOL class_addIvar ( Class cls, const char *name, size_t size, uint8_t alignment, const char *types ); //这个只能够向在runtime时创建的类添加成员变量
+
+// 获取整个成员变量列表
+Ivar * class_copyIvarList ( Class cls, unsigned int *outCount ); //必须使用free()来释放这个数组
+
+//属性操作函数
+// 获取类中指定名称实例成员变量的信息
+Ivar class_getInstanceVariable ( Class cls, const char *name );
+
+// 获取类成员变量的信息
+Ivar class_getClassVariable ( Class cls, const char *name );
+
+// 添加成员变量
+BOOL class_addIvar ( Class cls, const char *name, size_t size, uint8_t alignment, const char *types );
+
+// 获取整个成员变量列表
+Ivar * class_copyIvarList ( Class cls, unsigned int *outCount );
+methodLists
+
+// 添加方法
+BOOL class_addMethod ( Class cls, SEL name, IMP imp, const char *types ); //和成员变量不同的是可以为类动态添加方法。如果有同名会返回NO，修改的话需要使用method_setImplementation
+
+// 获取实例方法
+Method class_getInstanceMethod ( Class cls, SEL name );
+
+// 获取类方法
+Method class_getClassMethod ( Class cls, SEL name );
+
+// 获取所有方法的数组
+Method * class_copyMethodList ( Class cls, unsigned int *outCount );
+
+// 替代方法的实现
+IMP class_replaceMethod ( Class cls, SEL name, IMP imp, const char *types );
+
+// 返回方法的具体实现
+IMP class_getMethodImplementation ( Class cls, SEL name );
+IMP class_getMethodImplementation_stret ( Class cls, SEL name );
+
+// 类实例是否响应指定的selector
+BOOL class_respondsToSelector ( Class cls, SEL sel );
+objc_protocol_list
+
+// 添加协议
+BOOL class_addProtocol ( Class cls, Protocol *protocol );
+
+// 返回类是否实现指定的协议
+BOOL class_conformsToProtocol ( Class cls, Protocol *protocol );
+
+// 返回类实现的协议列表
+Protocol * class_copyProtocolList ( Class cls, unsigned int *outCount );
+version
+
+// 获取版本号
+int class_getVersion ( Class cls );
+
+// 设置版本号
+void class_setVersion ( Class cls, int version );
+
+=================================
+=================================
+

@@ -1,0 +1,8 @@
+
+#!/usr/local/bin/perl
+for($i = 0 ; $i <@aaa ; $i++)
+{
+	printf("%d\t= 0x%x\n",$aaa[$i],$aaa[$i]);
+}
+	
+

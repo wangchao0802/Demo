@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:L17File/L17File.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L16string/L16string.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L15Container/L15Container.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L14friendClass/L14friendClass.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L13refer/L13refer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L12functionPointer/L12functionPointer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L11fakeFuction/L11fakeFuction.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L10operatror/L10operatror.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L09overload/L09overload.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L07functions/L07functions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L06super/L06super.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L05superInit/L05superInit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L04init/L04init.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L03/L03.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L01oop/L01oop.xcodeproj">
+   </FileRef>
+</Workspace>

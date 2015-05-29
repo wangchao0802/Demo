@@ -1,0 +1,56 @@
+
+
+生成项目工程：
+1.切换到目录
+
+运行：
+./cocos new hellocc -l cpp -p com.jj.hellocc -d /Users/wangchao/Desktop/Learn/cocos2d
+
+
+
+
+Mac OS的Python默认版本更改方法
+非常喜欢在Mac OS上进行Python开发，也非常喜欢PyCharm这样的开发工具。由于装了不同的Python版本，而且有时候需要在Shell下使用特定的Python版本，所以就把默认Python版本更新的方法记一下：
+
+1、首先切换到目录：/Library/Frameworks/Python.framework/Versions，所有的Python版本都安装到这里了。
+
+2、将默认Python的安装目录的用户组设定为wheel。
+
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+sudo chown -R root:wheel /System/Library/Frameworks/Python.framework/Versions/3.4  
+
+3、修改Python的当前安装目录的符合软链接（先删除已有的，再添加新的）
+
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+sudo rm /Library/Frameworks/Python.framework/Versions/Current  
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+sudo ln -s /Library/Frameworks/Python.framework/Versions/3.4 /Library/Frameworks/Python.framework/Versions/Current  
+
+4、删除/usr目录下旧的符号链接（/usr/bin下）
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+sudo rm /usr/bin/pydoc  
+sudo rm /usr/bin/python  
+sudo rm /usr/bin/pythonw  
+sudo rm /usr/bin/python-config  
+
+5、重新在/usr目录下建立符号链接
+
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/pydoc3.4 /usr/bin/pydoc  
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4 /usr/bin/python  
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/pythonw3.4 /usr/bin/pythonw  
+sudo ln -s /System/Library/Frameworks/Python.framework/Versions/3.4/bin/python3.4m-config /usr/bin/python-config  
+
+6、更新.bash_profile中默认的PATH
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+vim ~/.bash_profile  
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+# Setting PATH for Python 3.4  
+# The orginal version is saved in .bash_profile.pysave  
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"  
+export PATH  
+
+7、重新source一下profile，之后Python的默认版本就更改好了。
+
+[plain] view plaincopy在CODE上查看代码片派生到我的代码片
+source ~/.bash_profile  

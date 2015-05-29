@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F86A06D19E3A743004008EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F86A06C19E3A743004008EE /* Foundation.framework */; };
+		7F86A06F19E3A743004008EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F86A06E19E3A743004008EE /* CoreGraphics.framework */; };
+		7F86A07119E3A743004008EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F86A07019E3A743004008EE /* UIKit.framework */; };
+		7F86A07719E3A743004008EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F86A07519E3A743004008EE /* InfoPlist.strings */; };
+		7F86A07919E3A743004008EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F86A07819E3A743004008EE /* main.m */; };
+		7F86A07D19E3A743004008EE /* CTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F86A07C19E3A743004008EE /* CTAppDelegate.m */; };
+		7F86A08019E3A743004008EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F86A07E19E3A743004008EE /* Main.storyboard */; };
+		7F86A08319E3A743004008EE /* CTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F86A08219E3A743004008EE /* CTViewController.m */; };
+		7F86A08519E3A743004008EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F86A08419E3A743004008EE /* Images.xcassets */; };
+		7F86A08C19E3A743004008EE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F86A08B19E3A743004008EE /* XCTest.framework */; };
+		7F86A08D19E3A743004008EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F86A06C19E3A743004008EE /* Foundation.framework */; };
+		7F86A08E19E3A743004008EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F86A07019E3A743004008EE /* UIKit.framework */; };
+		7F86A09619E3A743004008EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F86A09419E3A743004008EE /* InfoPlist.strings */; };
+		7F86A09819E3A743004008EE /* blockarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F86A09719E3A743004008EE /* blockarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F86A08F19E3A743004008EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F86A06119E3A743004008EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F86A06819E3A743004008EE;
+			remoteInfo = blockar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F86A06919E3A743004008EE /* blockar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blockar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F86A06C19E3A743004008EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F86A06E19E3A743004008EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F86A07019E3A743004008EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F86A07419E3A743004008EE /* blockar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blockar-Info.plist"; sourceTree = "<group>"; };
+		7F86A07619E3A743004008EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F86A07819E3A743004008EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F86A07A19E3A743004008EE /* blockar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blockar-Prefix.pch"; sourceTree = "<group>"; };
+		7F86A07B19E3A743004008EE /* CTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTAppDelegate.h; sourceTree = "<group>"; };
+		7F86A07C19E3A743004008EE /* CTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTAppDelegate.m; sourceTree = "<group>"; };
+		7F86A07F19E3A743004008EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F86A08119E3A743004008EE /* CTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTViewController.h; sourceTree = "<group>"; };
+		7F86A08219E3A743004008EE /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
+		7F86A08419E3A743004008EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F86A08A19E3A743004008EE /* blockarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blockarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F86A08B19E3A743004008EE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7F86A09319E3A743004008EE /* blockarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blockarTests-Info.plist"; sourceTree = "<group>"; };
+		7F86A09519E3A743004008EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F86A09719E3A743004008EE /* blockarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F86A06619E3A743004008EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F86A06F19E3A743004008EE /* CoreGraphics.framework in Frameworks */,
+				7F86A07119E3A743004008EE /* UIKit.framework in Frameworks */,
+				7F86A06D19E3A743004008EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F86A08719E3A743004008EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F86A08C19E3A743004008EE /* XCTest.framework in Frameworks */,
+				7F86A08E19E3A743004008EE /* UIKit.framework in Frameworks */,
+				7F86A08D19E3A743004008EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F86A06019E3A743004008EE = {
+			isa = PBXGroup;
+			children = (
+				7F86A07219E3A743004008EE /* blockar */,
+				7F86A09119E3A743004008EE /* blockarTests */,
+				7F86A06B19E3A743004008EE /* Frameworks */,
+				7F86A06A19E3A743004008EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F86A06A19E3A743004008EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F86A06919E3A743004008EE /* blockar.app */,
+				7F86A08A19E3A743004008EE /* blockarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F86A06B19E3A743004008EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F86A06C19E3A743004008EE /* Foundation.framework */,
+				7F86A06E19E3A743004008EE /* CoreGraphics.framework */,
+				7F86A07019E3A743004008EE /* UIKit.framework */,
+				7F86A08B19E3A743004008EE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F86A07219E3A743004008EE /* blockar */ = {
+			isa = PBXGroup;
+			children = (
+				7F86A07B19E3A743004008EE /* CTAppDelegate.h */,
+				7F86A07C19E3A743004008EE /* CTAppDelegate.m */,
+				7F86A07E19E3A743004008EE /* Main.storyboard */,
+				7F86A08119E3A743004008EE /* CTViewController.h */,
+				7F86A08219E3A743004008EE /* CTViewController.m */,
+				7F86A08419E3A743004008EE /* Images.xcassets */,
+				7F86A07319E3A743004008EE /* Supporting Files */,
+			);
+			path = blockar;
+			sourceTree = "<group>";
+		};
+		7F86A07319E3A743004008EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F86A07419E3A743004008EE /* blockar-Info.plist */,
+				7F86A07519E3A743004008EE /* InfoPlist.strings */,
+				7F86A07819E3A743004008EE /* main.m */,
+				7F86A07A19E3A743004008EE /* blockar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F86A09119E3A743004008EE /* blockarTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F86A09719E3A743004008EE /* blockarTests.m */,
+				7F86A09219E3A743004008EE /* Supporting Files */,
+			);
+			path = blockarTests;
+			sourceTree = "<group>";
+		};
+		7F86A09219E3A743004008EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F86A09319E3A743004008EE /* blockarTests-Info.plist */,
+				7F86A09419E3A743004008EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F86A06819E3A743004008EE /* blockar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F86A09B19E3A743004008EE /* Build configuration list for PBXNativeTarget "blockar" */;
+			buildPhases = (
+				7F86A06519E3A743004008EE /* Sources */,
+				7F86A06619E3A743004008EE /* Frameworks */,
+				7F86A06719E3A743004008EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blockar;
+			productName = blockar;
+			productReference = 7F86A06919E3A743004008EE /* blockar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F86A08919E3A743004008EE /* blockarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F86A09E19E3A743004008EE /* Build configuration list for PBXNativeTarget "blockarTests" */;
+			buildPhases = (
+				7F86A08619E3A743004008EE /* Sources */,
+				7F86A08719E3A743004008EE /* Frameworks */,
+				7F86A08819E3A743004008EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F86A09019E3A743004008EE /* PBXTargetDependency */,
+			);
+			name = blockarTests;
+			productName = blockarTests;
+			productReference = 7F86A08A19E3A743004008EE /* blockarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F86A06119E3A743004008EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = WangChao;
+				TargetAttributes = {
+					7F86A08919E3A743004008EE = {
+						TestTargetID = 7F86A06819E3A743004008EE;
+					};
+				};
+			};
+			buildConfigurationList = 7F86A06419E3A743004008EE /* Build configuration list for PBXProject "blockar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F86A06019E3A743004008EE;
+			productRefGroup = 7F86A06A19E3A743004008EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F86A06819E3A743004008EE /* blockar */,
+				7F86A08919E3A743004008EE /* blockarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F86A06719E3A743004008EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F86A08519E3A743004008EE /* Images.xcassets in Resources */,
+				7F86A07719E3A743004008EE /* InfoPlist.strings in Resources */,
+				7F86A08019E3A743004008EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F86A08819E3A743004008EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F86A09619E3A743004008EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F86A06519E3A743004008EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F86A07919E3A743004008EE /* main.m in Sources */,
+				7F86A07D19E3A743004008EE /* CTAppDelegate.m in Sources */,
+				7F86A08319E3A743004008EE /* CTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F86A08619E3A743004008EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F86A09819E3A743004008EE /* blockarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F86A09019E3A743004008EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F86A06819E3A743004008EE /* blockar */;
+			targetProxy = 7F86A08F19E3A743004008EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F86A07519E3A743004008EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F86A07619E3A743004008EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F86A07E19E3A743004008EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F86A07F19E3A743004008EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F86A09419E3A743004008EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F86A09519E3A743004008EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F86A09919E3A743004008EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F86A09A19E3A743004008EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F86A09C19E3A743004008EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blockar/blockar-Prefix.pch";
+				INFOPLIST_FILE = "blockar/blockar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F86A09D19E3A743004008EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blockar/blockar-Prefix.pch";
+				INFOPLIST_FILE = "blockar/blockar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F86A09F19E3A743004008EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/blockar.app/blockar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blockar/blockar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "blockarTests/blockarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7F86A0A019E3A743004008EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/blockar.app/blockar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blockar/blockar-Prefix.pch";
+				INFOPLIST_FILE = "blockarTests/blockarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F86A06419E3A743004008EE /* Build configuration list for PBXProject "blockar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F86A09919E3A743004008EE /* Debug */,
+				7F86A09A19E3A743004008EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F86A09B19E3A743004008EE /* Build configuration list for PBXNativeTarget "blockar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F86A09C19E3A743004008EE /* Debug */,
+				7F86A09D19E3A743004008EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F86A09E19E3A743004008EE /* Build configuration list for PBXNativeTarget "blockarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F86A09F19E3A743004008EE /* Debug */,
+				7F86A0A019E3A743004008EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F86A06119E3A743004008EE /* Project object */;
+}

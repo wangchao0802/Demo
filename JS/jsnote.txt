@@ -1,0 +1,31 @@
+==============输出=================
+console.log(c);
+document.write(Date());
+document.getElementById("demo").innerHTML="HAH first";
+==============变量=================
+使用var 来声明 变量;
+var va1 = "var";
+数据类型：
+String,Number,Boolea,Array,Object,Null,Undefined
+
+声明类型：
+var x = new String;
+var b = new Array;
+将变量的值用null来清空
+x = null
+==============函数=================
+fuction fucName {}
+局部变量在函数运行之后被删除；
+全局变量在页面关闭之后被删除；
+
+如果把值赋给未声明的变量，则该变量被自动作为全局变量声明；
+haha = "test var";
+
+
+
+
+
+
+
+
+

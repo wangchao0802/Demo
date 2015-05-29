@@ -1,0 +1,43 @@
+#coding=utf-8
+#!/usr/bin/python
+
+import sys; x = 'foo'; sys.stdout.write(x+'\n')
+cout = 199 
+mile =19.93
+name = "jone"
+print cout
+print mile
+print name
+
+a,b,c = 1,2,"helo"
+
+s = "ilovepython"
+print s[1:5] *2
+
+list =['abc',93,2.3,'jon']
+print list[2:]
+print list[3:] *3
+
+typle = ('fuk',23,2.3)
+
+print typle[2:]*2
+
+dict = {}
+dict['helo'] = "this is one"
+dict[2] = 22
+
+print dict
+
+######## ynunsuan
+
+
+
+
+
+
+
+
+
+
+
+

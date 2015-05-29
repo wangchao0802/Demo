@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:L04Customsecene/L04Customsecene.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:L01spritekit/L01spritekit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Weather/Weather.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:justPlay.playground">
+   </FileRef>
+   <FileRef
+      location = "group:learnGame/learnGame.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnHello/LearnHello.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOO/LearnOO.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LeanFunc/LeanFunc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Learn06/Learn06.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Learn05/Learn05.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Leran03type/Leran03type.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Leran01/Leran01.xcodeproj">
+   </FileRef>
+</Workspace>
