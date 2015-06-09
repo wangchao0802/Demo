@@ -1,0 +1,30 @@
+storyboard
+
+1.组织和管理xib的；
+
+2.指定新建的stroyboard 为初始化的入口，attribute spec(第四个)      
+  viewcontroller中选中 is initial View controller;
+
+3.连接起来的按钮是ctrl+drag; 会有4种不同类型的图标；
+
+4.拖一个新的viewcontroller , 把它放一个容器类的viewcontroller（uinavigation, uitabviewcontrller等等）中：
+在Xcode菜单栏选择 Editor\Embed In\Navigation Controller 
+
+5.页面间传参数：
+-(void) prepareForSegue: (UIStoryBoardSegue *)segue sender: (id)；
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"AddPlayer"]) {
+ 
+        UINavigationController *navigationController = segue.destinationViewController;
+        PlayerDetailsViewController *playerDetailsViewController = [navigationController viewControllers][0];
+        playerDetailsViewController.delegate = self;
+    }
+}
+
+6.segue 归源viewcontroller管理和控制，destination viewcontroller甚至不知道从哪里进来的
+7.unwind segue  ios6;
+8.static cells.
+
+

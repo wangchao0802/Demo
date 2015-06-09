@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PlayerCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *l1;
 
+@property (weak, nonatomic) IBOutlet UILabel *l2;
 @end

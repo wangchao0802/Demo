@@ -10,4 +10,10 @@
 
 @interface JDShareObject : NSObject
 
+@property(nonatomic,copy) NSString *desc;
+@property(nonatomic,copy) NSString *icon;
+@property(nonatomic,copy) NSString *name;
+@property(nonatomic,assign) BOOL enable;
+
+
 @end

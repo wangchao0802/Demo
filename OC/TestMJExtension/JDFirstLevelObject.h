@@ -10,4 +10,8 @@
 
 @interface JDFirstLevelObject : NSObject
 
+@property (nonatomic,assign) NSInteger firework;
+@property (nonatomic,strong) NSArray *floorList;
+@property (nonatomic,copy)   NSString *code;
+
 @end

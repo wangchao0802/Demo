@@ -14,6 +14,10 @@
 		4B4EE2D81B1EDCC500C66696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4EE2D71B1EDCC500C66696 /* Images.xcassets */; };
 		4B4EE2DB1B1EDCC500C66696 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4EE2D91B1EDCC500C66696 /* LaunchScreen.xib */; };
 		4B4EE2E71B1EDCC500C66696 /* TestStoryBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EE2E61B1EDCC500C66696 /* TestStoryBoardTests.m */; };
+		4B4EE2F41B20297F00C66696 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EE2F31B20297F00C66696 /* PlayerViewController.m */; };
+		4B4EE2F71B202AFD00C66696 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EE2F61B202AFD00C66696 /* Player.m */; };
+		4B4EE2FA1B21A32A00C66696 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EE2F91B21A32A00C66696 /* PlayerCell.m */; };
+		4B4EE2FD1B21AB7700C66696 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EE2FC1B21AB7700C66696 /* PlayerDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		4B4EE2E01B1EDCC500C66696 /* TestStoryBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestStoryBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4EE2E51B1EDCC500C66696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B4EE2E61B1EDCC500C66696 /* TestStoryBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStoryBoardTests.m; sourceTree = "<group>"; };
+		4B4EE2F21B20297F00C66696 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		4B4EE2F31B20297F00C66696 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		4B4EE2F51B202AFD00C66696 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		4B4EE2F61B202AFD00C66696 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		4B4EE2F81B21A32A00C66696 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		4B4EE2F91B21A32A00C66696 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		4B4EE2FB1B21AB7700C66696 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		4B4EE2FC1B21AB7700C66696 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,14 @@
 				4B4EE2CF1B1EDCC500C66696 /* AppDelegate.m */,
 				4B4EE2D11B1EDCC500C66696 /* ViewController.h */,
 				4B4EE2D21B1EDCC500C66696 /* ViewController.m */,
+				4B4EE2F21B20297F00C66696 /* PlayerViewController.h */,
+				4B4EE2F31B20297F00C66696 /* PlayerViewController.m */,
+				4B4EE2FB1B21AB7700C66696 /* PlayerDetailsViewController.h */,
+				4B4EE2FC1B21AB7700C66696 /* PlayerDetailsViewController.m */,
+				4B4EE2F51B202AFD00C66696 /* Player.h */,
+				4B4EE2F61B202AFD00C66696 /* Player.m */,
+				4B4EE2F81B21A32A00C66696 /* PlayerCell.h */,
+				4B4EE2F91B21A32A00C66696 /* PlayerCell.m */,
 				4B4EE2D41B1EDCC500C66696 /* Main.storyboard */,
 				4B4EE2D71B1EDCC500C66696 /* Images.xcassets */,
 				4B4EE2D91B1EDCC500C66696 /* LaunchScreen.xib */,
@@ -220,8 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B4EE2D31B1EDCC500C66696 /* ViewController.m in Sources */,
+				4B4EE2F41B20297F00C66696 /* PlayerViewController.m in Sources */,
 				4B4EE2D01B1EDCC500C66696 /* AppDelegate.m in Sources */,
 				4B4EE2CD1B1EDCC500C66696 /* main.m in Sources */,
+				4B4EE2FA1B21A32A00C66696 /* PlayerCell.m in Sources */,
+				4B4EE2F71B202AFD00C66696 /* Player.m in Sources */,
+				4B4EE2FD1B21AB7700C66696 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +442,7 @@
 				4B4EE2EC1B1EDCC500C66696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B4EE2ED1B1EDCC500C66696 /* Build configuration list for PBXNativeTarget "TestStoryBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +451,7 @@
 				4B4EE2EF1B1EDCC500C66696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

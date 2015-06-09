@@ -10,4 +10,9 @@
 
 @interface JDBannerObject : NSObject
 
+@property(nonatomic,assign) NSInteger activityId;
+@property(nonatomic,copy) NSString *sourceValue;
+@property(nonatomic,copy) NSString *title;
+@property(nonatomic,copy) NSString *horizontalImag;
+
 @end

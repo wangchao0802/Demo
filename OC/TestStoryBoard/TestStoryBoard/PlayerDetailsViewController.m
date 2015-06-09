@@ -10,4 +10,25 @@
 
 @implementation PlayerDetailsViewController
 
+- (IBAction)cancel:(id)sender
+{
+    [self.delegate playerDetailsViewControllerDidCancel:self];
+}
+- (IBAction)done:(id)sender
+{
+    [self.delegate playerDetailsViewControllerDidSave:self];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        NSLog(@"init PlayerDetailsViewController");
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc PlayerDetailsViewController");
+}
 @end

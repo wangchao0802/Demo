@@ -10,4 +10,15 @@
 
 @interface JDSecondLevelObject : NSObject
 
+@property (nonatomic ,assign) NSInteger bottomMargin;
+@property (nonatomic,assign) NSInteger jumpTo;
+@property (nonatomic, strong) NSDictionary * content;
+@property (nonatomic,copy) NSString *showName;
+@property (nonatomic,copy) NSString *type;
+
+@property (nonatomic,strong) NSArray *bannerArray;
+
+@property (nonatomic,strong) id  data;
+
+
 @end

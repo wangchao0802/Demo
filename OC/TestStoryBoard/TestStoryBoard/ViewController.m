@@ -18,6 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)push:(id)sender {
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    UIViewController *vc = [story instantiateInitialViewController];
+    [self presentViewController:vc animated:YES completion:^{
+         
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

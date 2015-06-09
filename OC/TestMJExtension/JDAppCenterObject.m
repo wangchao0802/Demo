@@ -10,4 +10,21 @@
 
 @implementation JDAppCenterObject
 
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+             @"time":@"poz.time",
+             @"city":@"poz.city",
+             @"dataArray":@"data"
+             };
+}
+
++ (NSDictionary *)objectClassInArray
+{
+    return @{
+             @"dataArray":@"JDAppIconObject"
+             };
+}
+
+
 @end

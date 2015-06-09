@@ -10,4 +10,9 @@
 
 @interface JDAppCenterObject : NSObject
 
+@property(nonatomic,copy) NSNumber *time;
+@property(nonatomic,copy) NSString *city;
+@property(nonatomic,strong) NSArray *dataArray;
+
+
 @end
