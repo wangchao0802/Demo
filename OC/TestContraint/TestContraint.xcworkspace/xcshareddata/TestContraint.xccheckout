@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>C8BF909A-3FE9-460E-943E-C1A003B59695</string>
+	<string>E71F8034-86FD-48D2-9646-708D4E557546</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TestContraint</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/wangchao0802/Demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OC/TestContraint/TestContraint.xcodeproj</string>
+	<string>OC/TestContraint/TestContraint.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4DA5A4BFAE0FEC040D6247FF1EA9E1DCFF588797</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/wangchao0802/Demo.git</string>

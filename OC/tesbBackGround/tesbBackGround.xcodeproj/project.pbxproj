@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BD4E0F31B38D5B60064F45D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4E0F21B38D5B60064F45D /* main.m */; };
+		4BD4E0F61B38D5B60064F45D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4E0F51B38D5B60064F45D /* AppDelegate.m */; };
+		4BD4E0F91B38D5B60064F45D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4E0F81B38D5B60064F45D /* ViewController.m */; };
+		4BD4E0FC1B38D5B60064F45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4E0FA1B38D5B60064F45D /* Main.storyboard */; };
+		4BD4E0FE1B38D5B60064F45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4E0FD1B38D5B60064F45D /* Images.xcassets */; };
+		4BD4E1011B38D5B60064F45D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD4E0FF1B38D5B60064F45D /* LaunchScreen.xib */; };
+		4BD4E10D1B38D5B60064F45D /* tesbBackGroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4E10C1B38D5B60064F45D /* tesbBackGroundTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BD4E1071B38D5B60064F45D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BD4E0E51B38D5B60064F45D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BD4E0EC1B38D5B60064F45D;
+			remoteInfo = tesbBackGround;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BD4E0ED1B38D5B60064F45D /* tesbBackGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tesbBackGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD4E0F11B38D5B60064F45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD4E0F21B38D5B60064F45D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BD4E0F41B38D5B60064F45D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BD4E0F51B38D5B60064F45D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BD4E0F71B38D5B60064F45D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4BD4E0F81B38D5B60064F45D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4BD4E0FB1B38D5B60064F45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BD4E0FD1B38D5B60064F45D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BD4E1001B38D5B60064F45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4BD4E1061B38D5B60064F45D /* tesbBackGroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tesbBackGroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD4E10B1B38D5B60064F45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD4E10C1B38D5B60064F45D /* tesbBackGroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tesbBackGroundTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BD4E0EA1B38D5B60064F45D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD4E1031B38D5B60064F45D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BD4E0E41B38D5B60064F45D = {
+			isa = PBXGroup;
+			children = (
+				4BD4E0EF1B38D5B60064F45D /* tesbBackGround */,
+				4BD4E1091B38D5B60064F45D /* tesbBackGroundTests */,
+				4BD4E0EE1B38D5B60064F45D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BD4E0EE1B38D5B60064F45D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4E0ED1B38D5B60064F45D /* tesbBackGround.app */,
+				4BD4E1061B38D5B60064F45D /* tesbBackGroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BD4E0EF1B38D5B60064F45D /* tesbBackGround */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4E0F41B38D5B60064F45D /* AppDelegate.h */,
+				4BD4E0F51B38D5B60064F45D /* AppDelegate.m */,
+				4BD4E0F71B38D5B60064F45D /* ViewController.h */,
+				4BD4E0F81B38D5B60064F45D /* ViewController.m */,
+				4BD4E0FA1B38D5B60064F45D /* Main.storyboard */,
+				4BD4E0FD1B38D5B60064F45D /* Images.xcassets */,
+				4BD4E0FF1B38D5B60064F45D /* LaunchScreen.xib */,
+				4BD4E0F01B38D5B60064F45D /* Supporting Files */,
+			);
+			path = tesbBackGround;
+			sourceTree = "<group>";
+		};
+		4BD4E0F01B38D5B60064F45D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4E0F11B38D5B60064F45D /* Info.plist */,
+				4BD4E0F21B38D5B60064F45D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BD4E1091B38D5B60064F45D /* tesbBackGroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4E10C1B38D5B60064F45D /* tesbBackGroundTests.m */,
+				4BD4E10A1B38D5B60064F45D /* Supporting Files */,
+			);
+			path = tesbBackGroundTests;
+			sourceTree = "<group>";
+		};
+		4BD4E10A1B38D5B60064F45D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4E10B1B38D5B60064F45D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BD4E0EC1B38D5B60064F45D /* tesbBackGround */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD4E1101B38D5B60064F45D /* Build configuration list for PBXNativeTarget "tesbBackGround" */;
+			buildPhases = (
+				4BD4E0E91B38D5B60064F45D /* Sources */,
+				4BD4E0EA1B38D5B60064F45D /* Frameworks */,
+				4BD4E0EB1B38D5B60064F45D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tesbBackGround;
+			productName = tesbBackGround;
+			productReference = 4BD4E0ED1B38D5B60064F45D /* tesbBackGround.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BD4E1051B38D5B60064F45D /* tesbBackGroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD4E1131B38D5B60064F45D /* Build configuration list for PBXNativeTarget "tesbBackGroundTests" */;
+			buildPhases = (
+				4BD4E1021B38D5B60064F45D /* Sources */,
+				4BD4E1031B38D5B60064F45D /* Frameworks */,
+				4BD4E1041B38D5B60064F45D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BD4E1081B38D5B60064F45D /* PBXTargetDependency */,
+			);
+			name = tesbBackGroundTests;
+			productName = tesbBackGroundTests;
+			productReference = 4BD4E1061B38D5B60064F45D /* tesbBackGroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BD4E0E51B38D5B60064F45D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = clark;
+				TargetAttributes = {
+					4BD4E0EC1B38D5B60064F45D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					4BD4E1051B38D5B60064F45D = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 4BD4E0EC1B38D5B60064F45D;
+					};
+				};
+			};
+			buildConfigurationList = 4BD4E0E81B38D5B60064F45D /* Build configuration list for PBXProject "tesbBackGround" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BD4E0E41B38D5B60064F45D;
+			productRefGroup = 4BD4E0EE1B38D5B60064F45D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BD4E0EC1B38D5B60064F45D /* tesbBackGround */,
+				4BD4E1051B38D5B60064F45D /* tesbBackGroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BD4E0EB1B38D5B60064F45D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD4E0FC1B38D5B60064F45D /* Main.storyboard in Resources */,
+				4BD4E1011B38D5B60064F45D /* LaunchScreen.xib in Resources */,
+				4BD4E0FE1B38D5B60064F45D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD4E1041B38D5B60064F45D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BD4E0E91B38D5B60064F45D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD4E0F91B38D5B60064F45D /* ViewController.m in Sources */,
+				4BD4E0F61B38D5B60064F45D /* AppDelegate.m in Sources */,
+				4BD4E0F31B38D5B60064F45D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD4E1021B38D5B60064F45D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD4E10D1B38D5B60064F45D /* tesbBackGroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BD4E1081B38D5B60064F45D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BD4E0EC1B38D5B60064F45D /* tesbBackGround */;
+			targetProxy = 4BD4E1071B38D5B60064F45D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BD4E0FA1B38D5B60064F45D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD4E0FB1B38D5B60064F45D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BD4E0FF1B38D5B60064F45D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BD4E1001B38D5B60064F45D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BD4E10E1B38D5B60064F45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BD4E10F1B38D5B60064F45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BD4E1111B38D5B60064F45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaoman Wang (ZSGG66K35W)";
+				INFOPLIST_FILE = tesbBackGround/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "96a0b551-87eb-41f5-ac8b-92dc7c25487a";
+			};
+			name = Debug;
+		};
+		4BD4E1121B38D5B60064F45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tesbBackGround/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "96a0b551-87eb-41f5-ac8b-92dc7c25487a";
+			};
+			name = Release;
+		};
+		4BD4E1141B38D5B60064F45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tesbBackGroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tesbBackGround.app/tesbBackGround";
+			};
+			name = Debug;
+		};
+		4BD4E1151B38D5B60064F45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tesbBackGroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tesbBackGround.app/tesbBackGround";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BD4E0E81B38D5B60064F45D /* Build configuration list for PBXProject "tesbBackGround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD4E10E1B38D5B60064F45D /* Debug */,
+				4BD4E10F1B38D5B60064F45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD4E1101B38D5B60064F45D /* Build configuration list for PBXNativeTarget "tesbBackGround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD4E1111B38D5B60064F45D /* Debug */,
+				4BD4E1121B38D5B60064F45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BD4E1131B38D5B60064F45D /* Build configuration list for PBXNativeTarget "tesbBackGroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD4E1141B38D5B60064F45D /* Debug */,
+				4BD4E1151B38D5B60064F45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BD4E0E51B38D5B60064F45D /* Project object */;
+}
